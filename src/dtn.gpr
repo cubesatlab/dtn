@@ -1,0 +1,24 @@
+project DTN is
+   
+   for Main use ("dtn_check.adb", "main_cfdp_rx.adb", "main_cfdp_tx.adb");
+   for Object_Dir use "build";
+   for Source_Dirs use (".", "Check", "../../CubedOS/src");
+   for Languages use ("Ada");
+   
+   package Ide is
+      for Default_Switches ("adacontrol") use ("-f", "dtn.aru");
+   end Ide;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-fstack-check", "-gnatwa", "-gnata", "-g");
+   end Compiler;
+
+   package Documentation is
+      for Documentation_Dir use "doc";
+   end Documentation;
+
+   package Prove is
+      for Switches use ("-j2", "--level=2");
+   end Prove;
+
+end DTN;
