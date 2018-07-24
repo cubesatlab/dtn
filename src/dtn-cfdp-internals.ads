@@ -1,19 +1,19 @@
 --------------------------------------------------------------------------------
--- FILE   : cfdp.ads
--- SUBJECT: Top level package of a CFDP implementation for IceCube.
--- AUTHOR : (C) Copyright 2016 by Vermont Technical College
+-- FILE   : dtn-cfdp-internals.ads
+-- SUBJECT: Specification of the internals package of a CFDP implementation.
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 -- This module implements the CCSDS File Delivery Protocol (CFDP).
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);
 
-with CubedOS.CFDP.API;
 with CubedOS.Lib;
 with CubedOS.Lib.Bounded_Strings;
+with DTN.CFDP.API;
 
-package CubedOS.CFDP.Internals is
-   use CubedOS.CFDP.API;
+package DTN.CFDP.Internals is
    use CubedOS.Lib;
+   use DTN.CFDP.API;
 
    -- In metadata, messages to users can't be more than 255 chars
    Max_Message_Length : constant Bounded_Strings.Index_Type := 255;
@@ -495,4 +495,4 @@ package CubedOS.CFDP.Internals is
        Depends =>
          ((Header_Information, Finished_Information, TLV_Options, Status) => Complete_Finished);
 
-end CubedOS.CFDP.Internals;
+end DTN.CFDP.Internals;

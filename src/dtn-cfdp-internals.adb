@@ -1,12 +1,12 @@
 --------------------------------------------------------------------------------
--- FILE   : cfdp.adb
--- SUBJECT: Body of the CFDP module's main package.
--- AUTHOR : (C) Copyright 2016 by Vermont Technical College
+-- FILE   : dtn-cfdp-internals.adb
+-- SUBJECT: Body of an internals package of a CFDP implementation.
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);
 
-package body CubedOS.CFDP.Internals is
+package body DTN.CFDP.Internals is
 
    -- I'm not sure what to do with Procedure Text_Tx, but I'm 100% sure it doesn't belong here.
    --
@@ -2320,4 +2320,4 @@ package body CubedOS.CFDP.Internals is
       end loop;
    end Deconstruct_Finished_PDU;
 
-end CubedOS.CFDP.Internals;
+end DTN.CFDP.Internals;

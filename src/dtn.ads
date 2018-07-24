@@ -1,12 +1,11 @@
 --------------------------------------------------------------------------------
--- FILE   : dtn-cfdp-internals-check.ads
--- SUBJECT: Package containing unit tests of internal CFDP subprograms.
+-- FILE   : dtn.ads
+-- SUBJECT: Specification of a package serving as a parent to all of DTN
 -- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
+pragma SPARK_Mode(On);
 
-package DTN.CFDP.Internals.Check is
-
-   procedure Run_Tests;
-
-end DTN.CFDP.Internals.Check;
+package DTN is
+   pragma Pure;
+end DTN;

@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
--- FILE   : cubedos-cfdp-api.adb
+-- FILE   : dtn-cfdp-api.adb
 -- SUBJECT: Body of a package that declares the interface to the CFDP module.
--- AUTHOR : (C) Copyright 2017 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);
 
 with CubedOS.Lib.XDR;
 
-package body CubedOS.CFDP.API is
+package body DTN.CFDP.API is
    use CubedOS.Lib;
 
    function Put_Request_Message
@@ -44,4 +44,4 @@ package body CubedOS.CFDP.API is
    end Put_Request_Message;
 
 
-end CubedOS.CFDP.API;
+end DTN.CFDP.API;

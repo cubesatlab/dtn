@@ -1,22 +1,22 @@
 --------------------------------------------------------------------------------
--- FILE   : cubedos-cfdp-messages.adb
+-- FILE   : dtn-cfdp-messages.adb
 -- SUBJECT: Package containing the CFDP message loop
--- AUTHOR : (C) Copyright 2016 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 -- This is in it's own child package so that it can be left out of the test program.
 -- The message loop doesn't terminate and we want the test program to terminate!
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);
 
-with CubedOS.CFDP.API;
-with CubedOS.CFDP.Internals;
 with CubedOS.Lib.XDR;
+with DTN.CFDP.API;
+with DTN.CFDP.Internals;
 
-package body CubedOS.CFDP.Messages is
+package body DTN.CFDP.Messages is
    use Message_Manager;
-   use CubedOS.CFDP.API;
-   use CubedOS.CFDP.Internals;
    use CubedOS.Lib;
+   use DTN.CFDP.API;
+   use DTN.CFDP.Internals;
    use type XDR.XDR_Unsigned;
 
    -- This is horribly memory inefficient (because Transaction_ID is a 16 bit type).
@@ -150,4 +150,4 @@ package body CubedOS.CFDP.Messages is
       end loop;
    end Message_Loop;
 
-end CubedOS.CFDP.Messages;
+end DTN.CFDP.Messages;

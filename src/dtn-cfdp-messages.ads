@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
--- FILE   : cubedos-cfdp-messages.adb
+-- FILE   : dtn-cfdp-messages.adb
 -- SUBJECT: A package containing the CFDP message loop.
--- AUTHOR : (C) Copyright 2016 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);
@@ -10,7 +10,7 @@ pragma Partition_Elaboration_Policy(Sequential);
 
 with System;
 
-package CubedOS.CFDP.Messages is
+package DTN.CFDP.Messages is
 
    task Message_Loop is
       -- pragma Storage_Size(4 * 1024);
@@ -23,4 +23,4 @@ package CubedOS.CFDP.Messages is
       "multiple tasks might queue on protected entry",
       "Every module has a unique ID");
 
-end CubedOS.CFDP.Messages;
+end DTN.CFDP.Messages;

@@ -1,20 +1,20 @@
 --------------------------------------------------------------------------------
 -- FILE   : main_cfdp_tx.adb
 -- SUBJECT: The main file for testing CFDP (transmitter).
--- AUTHOR : (C) Copyright 2017 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 
 with Ada.Text_IO;
-with CubedOS.CFDP.API;
-with CubedOS.CFDP.Messages;
+with DTN.CFDP.API;
+with DTN.CFDP.Messages;
 with CubedOS.File_Server.Messages;
-pragma Unreferenced(CubedOS.CFDP.Messages);
+pragma Unreferenced(DTN.CFDP.Messages);
 pragma Unreferenced(CubedOS.File_Server.Messages);
 with Message_Manager;
 
 use Ada.Text_IO;
-use CubedOS;
+use DTN;
 use Message_Manager;
 
 procedure Main_CFDP_TX is

@@ -1,15 +1,15 @@
 --------------------------------------------------------------------------------
 -- FILE   : main_cfdp_rx.adb
 -- SUBJECT: The main file for testing CFDP (receiver).
--- AUTHOR : (C) Copyright 2017 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 
 --with Ada.Text_IO;
---with CubedOS.CFDP.API;
-with CubedOS.CFDP;
+--with DTN.CFDP.API;
+with DTN.CFDP;
 with CubedOS.File_Server.Messages;
-pragma Unreferenced(CubedOS.CFDP);
+pragma Unreferenced(DTN.CFDP);
 pragma Unreferenced(CubedOS.File_Server.Messages);
 with Message_Manager;
 

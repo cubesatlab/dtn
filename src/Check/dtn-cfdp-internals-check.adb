@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
--- FILE   : cubedos-cfdp-internals-check.adb
+-- FILE   : dtn-cfdp-internals-check.adb
 -- SUBJECT: Package containing unit tests of internal CFDP subprograms.
--- AUTHOR : (C) Copyright 2017 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 with Ada.Assertions;
@@ -10,7 +10,7 @@ with Ada.Text_IO;
 use Ada.Assertions;
 use Ada.Text_IO;
 
-package body CubedOS.CFDP.Internals.Check is
+package body DTN.CFDP.Internals.Check is
 
    procedure Test_Encode_Fixed_Header is
 
@@ -67,4 +67,4 @@ package body CubedOS.CFDP.Internals.Check is
    end Run_Tests;
 
 
-end CubedOS.CFDP.Internals.Check;
+end DTN.CFDP.Internals.Check;

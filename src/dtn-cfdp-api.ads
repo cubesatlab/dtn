@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
--- FILE   : cubedos-cfdp-api.ads
+-- FILE   : dtn-cfdp-api.ads
 -- SUBJECT: Specification of a package that declares the interface to the CFDP module.
--- AUTHOR : (C) Copyright 2017 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2018 by Vermont Technical College
 --
 -- All the subprograms in this package must be task safe. They can be simultaneously called
 -- from multiple tasks. If possible, make every subprogram here a pure function.
@@ -13,7 +13,7 @@ with Message_Manager;
 
 use Message_Manager;
 
-package CubedOS.CFDP.API is
+package DTN.CFDP.API is
 
    -- We have a maximum filename length of 16 characters
    Max_Name_Length : constant := 16;
@@ -67,4 +67,4 @@ package CubedOS.CFDP.API is
          --(XDR.Length_With_Padding(Source_File'Length) <=
                   --XDR_Size_Type'Last - 16 - XDR.Length_With_Padding(Destination_File'Length));
 
-end CubedOS.CFDP.API;
+end DTN.CFDP.API;
