@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- FILE   : main_cfdp_rx.adb
 -- SUBJECT: The main file for testing CFDP (receiver).
--- AUTHOR : (C) Copyright 2018 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2021 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- FILE   : main_cfdp_tx.adb
 -- SUBJECT: The main file for testing CFDP (transmitter).
--- AUTHOR : (C) Copyright 2018 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2021 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ begin
 
    -- Try to send a file.
    Message_Manager.Route_Message
-     (CFDP.API.Put_Request_Message(Domain_ID, My_Module_ID, 1, "File_1.txt", "File_1.txt"));
+     (CFDP.API.Put_Request_Encode(Domain_ID, My_Module_ID, 0, 1, "File_1.txt", "File_1.txt"));
    Put_Line("TX : Put Request message sending File_1 to CFDP entity #1");
    loop
       Message_Manager.Fetch_Message(My_Module_ID, Incoming_Message);

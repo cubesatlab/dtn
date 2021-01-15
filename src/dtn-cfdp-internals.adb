@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- FILE   : dtn-cfdp-internals.adb
 -- SUBJECT: Body of an internals package of a CFDP implementation.
--- AUTHOR : (C) Copyright 2018 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2021 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);

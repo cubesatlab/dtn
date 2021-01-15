@@ -11,14 +11,20 @@ project DTN is
 
    package Compiler is
       for Default_Switches ("ada") use ("-fstack-check", "-gnatwa", "-gnata", "-g");
-   end Compiler;
+   end Compiler;           
+       
+   package Builder is   
+      for Global_Configuration_Pragmas use "gnat.adc";
+   end Builder;
 
    package Documentation is
       for Documentation_Dir use "doc";
    end Documentation;
 
    package Prove is
-      for Switches use ("-j2", "--level=2");
    end Prove;
+
+   package Linker is
+   end Linker;
 
 end DTN;

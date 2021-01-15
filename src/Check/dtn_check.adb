@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------
 -- FILE   : dtn_check.adb
 -- SUBJECT: The main entry point for the DTN unit test program.
--- AUTHOR : (C) Copyright 2018 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2021 by Vermont Technical College
 --
 -- Please send comments or bug reports to
 --

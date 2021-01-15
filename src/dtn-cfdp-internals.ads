@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- FILE   : dtn-cfdp-internals.ads
 -- SUBJECT: Specification of the internals package of a CFDP implementation.
--- AUTHOR : (C) Copyright 2018 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2021 by Vermont Technical College
 --
 -- This module implements the CCSDS File Delivery Protocol (CFDP).
 --------------------------------------------------------------------------------

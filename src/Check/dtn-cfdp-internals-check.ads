@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- FILE   : dtn-cfdp-internals-check.ads
 -- SUBJECT: Package containing unit tests of internal CFDP subprograms.
--- AUTHOR : (C) Copyright 2018 by Vermont Technical College
+-- AUTHOR : (C) Copyright 2021 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 

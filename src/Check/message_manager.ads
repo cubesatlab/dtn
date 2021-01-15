@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- FILE    : message_manager.adb
 -- SUBJECT : Package holding the mailboxes used by CubedOS message passing.
--- AUTHOR  : (C) Copyright 2017 by Vermont Technical College
+-- AUTHOR  : (C) Copyright 2021 by Vermont Technical College
 --
 --------------------------------------------------------------------------------
 pragma SPARK_Mode(On);
