@@ -1,0 +1,94 @@
+// FILE: cfdp.mxdr
+//
+// The interface definition of the CFDP module.
+
+// The following are in the hand coded API package specification. We need to translate this
+// to suitable MXDR type/constant declarations. Is that possible? Is that necessary?
+
+//   -- We have a maximum filename length of 16 characters
+//   Max_Name_Length : constant := 16;
+//
+//   -- This implementation uses 16 bit entity IDs.
+//   type Entity_ID is mod 2**16;
+//
+//   -- This implementation uses 16 bit transaction IDs.
+//   type Transaction_ID is mod 2**16;
+
+// These are temporary declarations so the message struct declarations below makes sense.
+typedef unsigned int Entity_ID range 0 .. 65535;
+typedef unsigned int Transaction_ID range 0 .. 65535;
+
+enum { Metadata_PDU, Filedata_PDU, EOF_PDU, Finished_PDU, Error } PDU_Category;
+
+// Various request messages sent by the CFDP user to the CFDP entity.
+message struct -> Put_Request {
+    Entity_ID Destination;
+    string    Source_File;
+    string    Destination_File;
+};
+
+message struct -> Cancel_Request {
+    void;
+};
+
+message struct -> Suspend_Request {
+    void;
+};
+
+message struct -> Resume_Request {
+    void;
+};
+
+message struct -> Report_Request {
+    void;
+};
+
+// Various indication messages sent by the CFDP entity to the CFDP user.
+
+message struct <- Transaction_Indication_Reply {
+    Transaction_ID Transaction;
+};
+
+message struct <- Metadata_Received_Indication_Reply {
+    void;
+};
+
+message struct <- File_Segment_Received_Indication_Reply {
+    void;
+};
+
+message struct <- Suspended_Indication_Reply {
+    void;
+};
+
+message struct <- Resumed_Indication_Reply {
+    void;
+};
+
+message struct <- EOF_Sent_Indication_Reply {
+    void;
+};
+
+message struct <- Transaction_Finished_Indication_Reply {
+    void;
+};
+
+message struct <- Transfer_Consigned_Indication_Reply {
+    void;
+};
+
+message struct <- Report_Indication_Reply {
+    void;
+};
+
+message struct <- Fault_Indication_Reply {
+    void;
+};
+
+message struct <- Abandoned_Indication_Reply {
+    void;
+};
+
+message struct <- EOF_Received_Indication_Reply {
+    void;
+};
