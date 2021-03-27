@@ -11,6 +11,6 @@ with Message_Manager;
 
 package DTN.CFDP is
 
-   ID : constant Message_Manager.Module_ID_Type := 4;
+   ID : constant Message_Manager.Module_ID_Type := 8;
 
 end DTN.CFDP;
