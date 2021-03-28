@@ -2,7 +2,7 @@ project DTN is
    
    for Main use ("dtn_check.adb", "main_cfdp_rx.adb", "main_cfdp_tx.adb");
    for Object_Dir use "build";
-   for Source_Dirs use (".", "Check", "../../CubedOS/src");
+   for Source_Dirs use (".", "Check", "../../CubedOS/src", "../../CubedOS/src/modules", "../../CubedOS/src/library");
    for Languages use ("Ada");
    
    package Ide is
